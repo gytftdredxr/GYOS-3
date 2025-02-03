@@ -1,0 +1,64 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #d3d3d3;
+    font-family: Arial, sans-serif;
+}
+
+#desktop {
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    background-color: #f0f0f0;
+}
+
+#taskbar {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 40px;
+    background-color: #333;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 0 10px;
+}
+
+#start-button {
+    background-color: #0078d4;
+    border: none;
+    color: white;
+    padding: 5px 15px;
+    cursor: pointer;
+}
+
+.window {
+    position: absolute;
+    width: 300px;
+    height: 200px;
+    background-color: white;
+    border: 2px solid #ccc;
+    border-radius: 10px;
+    display: none; /* Se muestra con JS */
+}
+
+.window-header {
+    background-color: #0078d4;
+    color: white;
+    padding: 10px;
+    cursor: move;
+    display: flex;
+    justify-content: space-between;
+}
+
+.window-body {
+    padding: 20px;
+}
+
+.close-btn {
+    background-color: red;
+    border: none;
+    color: white;
+    cursor: pointer;
+}

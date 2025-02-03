@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sistema Operativo Simulado</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="desktop">
+        <!-- Barra de tareas -->
+        <div id="taskbar">
+            <button id="start-button">Inicio</button>
+        </div>
+
+        <!-- Aplicaciones -->
+        <div class="app" id="greener-app">
+            <button onclick="openGreenerApp()">GREENER</button>
+        </div>
+
+        <!-- Ventanas -->
+        <div class="window" id="greener-window">
+            <div class="window-header">
+                <span class="window-title">GREENER - Búsqueda</span>
+                <button class="close-btn" onclick="closeWindow('greener-window')">X</button>
+            </div>
+            <div class="window-body">
+                <input type="text" id="search-query" placeholder="Buscar en GREENER...">
+                <button onclick="searchGreener()">Buscar</button>
+            </div>
+        </div>
+
+        <!-- Ventana de la calculadora -->
+        <div class="window" id="calculator-window">
+            <div class="window-header">
+                <span class="window-title">Calculadora</span>
+                <button class="close-btn" onclick="closeWindow('calculator-window')">X</button>
+            </div>
+            <div class="window-body">
+                <input type="text" id="calc-display" disabled>
+                <div class="calc-buttons">
+                    <button onclick="appendCalc('1')">1</button>
+                    <button onclick="appendCalc('2')">2</button>
+                    <button onclick="appendCalc('3')">3</button>
+                    <button onclick="appendCalc('4')">4</button>
+                    <button onclick="appendCalc('5')">5</button>
+                    <button onclick="appendCalc('6')">6</button>
+                    <button onclick="appendCalc('7')">7</button>
+                    <button onclick="appendCalc('8')">8</button>
+                    <button onclick="appendCalc('9')">9</button>
+                    <button onclick="appendCalc('0')">0</button>
+                    <button onclick="clearCalc()">C</button>
+                    <button onclick="calculate()">=</button>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
